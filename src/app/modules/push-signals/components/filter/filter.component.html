@@ -1,0 +1,18 @@
+<section>
+
+    <h5>Filters</h5>
+
+    <hr>
+
+    <ul>
+        <li *ngFor="let option of filtersOptions">
+            <cds-checkbox>
+                <label>{{ option.key }}</label>
+                <input type="checkbox"
+                    (change)="handleFilterClick(option)"
+                    >
+            </cds-checkbox>
+        </li>
+    </ul>
+
+</section>
